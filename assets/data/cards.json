@@ -1,0 +1,38 @@
+[
+    {
+        "image": "/assets/img/acrocanthosaurus.jpg",
+        "name": "chili"
+    },
+    {
+        "image": "/assets/img/albertosaurus.jpg",
+        "name": "grapes"
+    },
+    {
+        "image": "/assets/img/allosaurus.jpg",
+        "name": "lemon"
+    },
+    {
+        "image": "/assets/img/ankylosaurus.jpg",
+        "name": "orange"
+    },
+    {
+        "image": "/assets/img/archaeopteryx.jpg",
+        "name": "pineapple"
+    },
+    {
+        "image": "/assets/img/argentinosaurus.jpg",
+        "name": "strawberry"
+    },
+    {
+        "image": "/assets/img/barosaurus.jpg",
+        "name": "tomato"
+    },
+    {
+        "image": "/assets/img/baryonyx.jpg",
+        "name": "watermelon"
+    },
+    {
+        "image": "/assets/img/brontosaurus.jpg",
+        "name": "cherries"
+    }
+]

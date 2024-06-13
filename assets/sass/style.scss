@@ -1,0 +1,124 @@
+// Variables
+$body-bg-color: #2c3e50;
+$text-color: #ecf0f1;
+$heading-color: #30884d;
+$paragraph-color: #bdc3c7;
+$button-bg-color: #3498db;
+$button-hover-bg-color: #2980b9;
+$button-text-color: #ecf0f1;
+$card-bg-color: #ecf0f1;
+$card-border-radius: 12px;
+$grid-gap: 20px;
+$font-size-h1: 48px;
+$font-size-p: 28px;
+$button-padding: 12px 24px;
+$button-font-size: 20px;
+$button-border-radius: 12px;
+$card-width: 160px;
+$card-height: calc(160px * 1.5);
+
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: $body-bg-color;
+  color: $text-color;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: $font-size-h1;
+  color: $heading-color;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: $font-size-p;
+  font-weight: bold;
+  color: $paragraph-color;
+  margin-bottom: 30px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  button {
+    margin-top: 40px;
+    padding: $button-padding;
+    font-size: $button-font-size;
+    border-radius: $button-border-radius;
+    background-color: $button-bg-color;
+    color: $button-text-color;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $button-hover-bg-color;
+    }
+  }
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-gap: $grid-gap;
+  grid-template-columns: repeat(6, $card-width);
+  grid-template-rows: repeat(2, $card-height);
+}
+
+.card {
+  height: $card-height;
+  width: $card-width;
+  border-radius: $card-border-radius;
+  background-color: $card-bg-color;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  &.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .front-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: $card-border-radius;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
+
+  .back {
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M25 30a5 5 0 110-10 5 5 0 010 10zm0-25a5 5 0 110-10 5 5 0 010 10zM0 30a5 5 0 110-10 5 5 0 010 10zM0 5A5 5 0 110-5 5 5 0 010 5zm12.5 12.5a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='none' fill='hsla(174, 100%, 29%, 1)'/><path d='M0 15a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm25 0a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM12.5 2.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0 25a2.5 2.5 0 110-5 2.5 2.5 0 010 5z'  stroke-width='1' stroke='none' fill='hsla(187, 100%, 42%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    background-position: center center;
+    background-size: cover;
+  }
+}
