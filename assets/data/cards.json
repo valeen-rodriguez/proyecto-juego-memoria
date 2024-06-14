@@ -1,38 +1,38 @@
 [
     {
         "image": "/assets/img/acrocanthosaurus.jpg",
-        "name": "chili"
+        "name": "acrocanthosaurus"
     },
     {
         "image": "/assets/img/albertosaurus.jpg",
-        "name": "grapes"
+        "name": "albertosaurus"
     },
     {
         "image": "/assets/img/allosaurus.jpg",
-        "name": "lemon"
+        "name": "allosaurus"
     },
     {
         "image": "/assets/img/ankylosaurus.jpg",
-        "name": "orange"
+        "name": "ankylosaurus"
     },
     {
         "image": "/assets/img/archaeopteryx.jpg",
-        "name": "pineapple"
+        "name": "archaeopteryx"
     },
     {
         "image": "/assets/img/argentinosaurus.jpg",
-        "name": "strawberry"
+        "name": "argentinosaurus"
     },
     {
         "image": "/assets/img/barosaurus.jpg",
-        "name": "tomato"
+        "name": "barosaurus"
     },
     {
         "image": "/assets/img/baryonyx.jpg",
-        "name": "watermelon"
+        "name": "baryonyx"
     },
     {
         "image": "/assets/img/brontosaurus.jpg",
-        "name": "cherries"
+        "name": "brontosaurus"
     }
 ]
